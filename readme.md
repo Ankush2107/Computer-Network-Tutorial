@@ -22,3 +22,30 @@
 6. And then, There was guy time burner who introduced WWW. In WWW network they use to store ands retrive this hyper link based document.
 7. That how the modern internet works everthing is html.
 8. And then later, few intial browsers came into the picture and it mozaik and netscape
+
+### Protocols
+Network Protocols are the set of rules and regulations setup to communicate and share information over a network.
+For eg: HTTP, UDP, SMTP and TCP etc.
+
+### Packets
+In order to share data, we can't send big chunck of data over the network. So we divide the data in smaller chunks, these small chunks are called as packets.
+
+### Address
+Sending messages over the network requires the destination details. This detail uniquely identify the end system is called as address.
+
+### Ports
+- Any machine could be running many network apps. In order to distinguish these apps for receiving messages we use ports (Port number).
+
+- IP-address + Port = Socket
+
+- Port helps you get the packets to specific process on the host. 
+
+- Every process has 16 bit port number.
+range of port number -> {0 - 2^16 = 65535} 
+
+- 0 - 1023: Well known ports
+For eg: port 80 belongs to http and port 443 belongs to https 
+
+- 1024 - 49152: Registered Ports
+They are used by specific, potentially proprietory apps/process that are known but not system defined.
+For eg: port 1433 belongs to Sql server and for mongo it is 27017
