@@ -34,18 +34,32 @@ In order to share data, we can't send big chunck of data over the network. So we
 Sending messages over the network requires the destination details. This detail uniquely identify the end system is called as address.
 
 ### Ports
-- Any machine could be running many network apps. In order to distinguish these apps for receiving messages we use ports (Port number).
+- `Any machine could be running many network apps. In order to distinguish these apps for receiving messages we use ports (Port number).`
 
-- IP-address + Port = Socket
+- `IP-address + Port = Socket`
 
-- Port helps you get the packets to specific process on the host. 
+- `Port helps you get the packets to specific process on the host.` 
 
-- Every process has 16 bit port number.
-range of port number -> {0 - 2^16 = 65535} 
+- `Every process has 16 bit port number.`
+range of port number -> {0 - 2^16 = 65535}
 
-- 0 - 1023: Well known ports
+- `0 - 1023: Well known ports`
 For eg: port 80 belongs to http and port 443 belongs to https 
 
-- 1024 - 49152: Registered Ports
+- `1024 - 49152: Registered Ports`
 They are used by specific, potentially proprietory apps/process that are known but not system defined.
-For eg: port 1433 belongs to Sql server and for mongo it is 27017
+For eg: port 1433 belongs to Sql server and for mongo it is 27017.
+
+- `49152 - 65535: Dynamic ports`
+
+### Access Networks
+These are media using which end systems connect to the internet.
+
+- `Network Interface adapter: It enables a computer to attach to a network. As there are different types of networks, It acts as a single suit  to connect to any network.`
+
+### DSL (Digital Subscriber Line)
+DSL uses the existing telephone ground work lines for internet connection. Generally DSL is provided by same company which supplies telephone service.
+
+### ISP (Internet Service Provider)
+It is just a company that provides end users internet connection.
+For eg: AT&T
